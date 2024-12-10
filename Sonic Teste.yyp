@@ -35,6 +35,7 @@
   "name":"Sonic Teste",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
