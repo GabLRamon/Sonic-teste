@@ -1,12 +1,15 @@
-if velocidade < velocidade_max{
-	velocidade = (velocidade + (accel * delta)) * (1 - ((1 - frc) * delta))
+
+forca[0] = (keyboard_check(vk_right) or keyboard_check(ord("D"))) - (keyboard_check(vk_left) or keyboard_check(ord("A")))
+
+
+show_debug_message(forca[0])
+
+accel += forca[0]/2
+
+
+if velocidade < velocidade_max {
+	velocidade += velocidade + accel/2
 }
 
-if keyboard_check(vk_right){
- x+=velocidade;
-}
-if keyboard_check(vk_left){
- x-=velocidade;
-}
 
-show_debug_message(velocidade)
+x += velocidade
