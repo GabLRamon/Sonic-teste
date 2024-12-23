@@ -31,3 +31,5 @@ forca[0] = (keyboard_check(vk_right)) - (keyboard_check(vk_left))
 show_debug_message(forca[0])
 
 show_debug_message(velocidade)
+
+//comentario para teste de token
